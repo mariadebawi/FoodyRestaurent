@@ -203,6 +203,10 @@ a.btn-blue:hover {
 
 /*========================================================================*/
 
+.intro {
+    padding: 20px 0 60px;
+}
+
 .intro .intro-content {
     padding: 10px;
     color: #999999;
@@ -212,4 +216,40 @@ a.btn-blue:hover {
     font-size: 14px;
     color: #4a4a4a;
     padding: 10px 0;
+}
+
+
+/*===================================================*/
+
+#services_area {
+    border-top: 2px solid #e2e2e2;
+    padding: 40px 0;
+    color: #999999;
+}
+
+#services_area h2 {
+    color: #7f7f7f;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    line-height: 40px;
+}
+
+#services_area .service {
+    margin-top: 40px;
+}
+
+.service .service-item {
+    padding-left: 50px;
+}
+
+.service .service-item h5 {
+    font-weight: 200;
+    font-size: 15px;
+    color: #3bafbe;
+}
+
+.service .service-item p {
+    text-align: justify;
 }
