@@ -132,64 +132,50 @@ a {
     padding: 20px;
 }
 
-#banner-area .item {
-    width: 100%;
-    overflow: hidden;
-}
-
 #banner-area .item img {
+    width: 100%;
     height: auto;
 }
 
-#banner-area .item .banner-text {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#banner-area .item .banner-table {
-    width: 100%;
-    height: 100%;
+.banner-content {
     display: table;
-}
-
-#banner-area .item .banner-align {
     width: 100%;
     height: 100%;
+}
+
+.banner-content .text-banner {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    color: #999999;
 }
 
-#banner-area .item .banner-textarea {
-    margin: 0 auto;
-    width: 1170px;
+.banner-content .text-banner h3 {
+    color: #333;
 }
 
-#banner-area .item .main-banner {
-    float: right;
-    width: 50%;
-}
-
-#banner-area .item .main-banner a {
+.banner-content .text-banner a {
     background: #3bafbe;
-    color: #fff;
     border-radius: 25px;
     padding: 10px 20px;
-    text-decoration: none;
+    color: #fff;
     text-transform: uppercase;
-    display: inline-block;
+    text-decoration: none;
 }
 
-#banner-area .item .main-banner a:hover {
-    background: #353535;
+.banner-content .text-banner a:hover {
+    background: #333;
 }
 
 
-/*============== BS SLIDER ==============*/
+/*========================== Box Slider =================================*/
 
-.bx-controls-direction {
+.bx-wrapper {
+    padding: 20px 10px;
+}
+
+.bx-wrapper .bx-controls-direction a {
     display: none;
 }
 
@@ -198,18 +184,16 @@ a {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-    background: none;
-    border: 2px solid #3bafbe;
-    text-indent: -9999px;
-    display: inline- block;
+    background: transparent;
+    border: 1px solid #3bafbe;
+    display: inline-block;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #3bafbe;
-    border: none;
 }
