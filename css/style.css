@@ -17,9 +17,10 @@ h6 {
 
 a {
     transition: .5s;
+    text-decoration: none !important;
 }
 
-.area-search input[type="submit"] {
+input[type="submit"] {
     transition: .5s;
     cursor: pointer;
 }
@@ -31,12 +32,19 @@ a.btn-blue {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 10px 0;
 }
 
 a.btn-blue:hover {
     background: #333;
     color: #fff;
+}
+
+input {
+    background: #333333;
+    color: #fff;
+    border: 1px border;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 
@@ -90,14 +98,6 @@ a.btn-blue:hover {
     margin-bottom: 20px;
 }
 
-.area-search input {
-    background: #333333;
-    color: #fff;
-    border: 1px border;
-    padding: 7px;
-    border-radius: 5px;
-}
-
 .area-search input[type="submit"] {
     background: #3bafbe;
 }
@@ -130,7 +130,6 @@ a.btn-blue:hover {
     padding: 5px 15px;
     color: #999999;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 #main-nav ul li a:hover {
@@ -252,4 +251,42 @@ a.btn-blue:hover {
 
 .service .service-item p {
     text-align: justify;
+}
+
+
+/*===========================================================*/
+
+#contact {
+    background: #252525;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+#contact .content-contact p,
+#contact .content-contact p a {
+    margin-top: 20px;
+    color: #999999;
+}
+
+#contact .content-contact.adress p {
+    line-height: 7px;
+}
+
+#contact .content-contact.blog p {
+    border-bottom: 1px solid #e2e2e2 !important;
+    line-height: 30px;
+}
+
+#contact .content-contact.blog p a {
+    color: #3bafbe;
+}
+
+#contact .content-contact.text a {
+    float: right;
+    margin-top: -25px;
+    text-transform: capitalize;
+}
+
+#contact .content-contact.text a:hover {
+    color: #3bafbe;
 }
