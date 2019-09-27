@@ -5,7 +5,7 @@
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/background_food.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url("../images/background_food.jpg");
     background-size: cover;
     height: 600px;
 }
@@ -54,7 +54,12 @@ nav {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: rgb(196, 137, 36);
+    background: #f2ac32;
+    transition: all .4s ease-in-out;
+}
+
+.nav-menu li a i.fa.fa-shopping-bag:hover::after {
+    background: #fff;
 }
 
 .nav-menu li a {
@@ -189,4 +194,91 @@ nav {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+
+/**===================== Service Section =======================================**/
+
+.services-seection {
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../images/services.jpg");
+    background-size: cover;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.services .service {
+    width: 300px;
+    height: 200px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.services .service.service-1 {
+    background-image: url("../images/breakfast.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.services .service.service-2 {
+    background-image: url("../images/lunch.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.services .service.service-3 {
+    background-image: url("../images/dinner.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.services .service .title-service {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: -40px;
+    left: 120px;
+}
+
+.services .service .services-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(242, 171, 49, 0.7);
+    position: relative;
+    transition: all .4s linear;
+    opacity: 0;
+}
+
+.services .service .services-overlay .text-overlay {
+    border: 2px solid #fff;
+    height: 170px;
+    width: 261px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+}
+
+.services .service .services-overlay .title-ovelay a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 60px;
+    top: 70px;
+}
+
+.services .service .services-overlay:hover {
+    opacity: 1;
 }
