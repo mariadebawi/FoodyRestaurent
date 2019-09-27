@@ -1,328 +1,79 @@
-body {
-    font-family: 'Merriweather', serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
-    font-weight: 400;
+header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/background_food.jpg");
+    background-size: cover;
+    height: 800px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-}
-
-a {
-    transition: .5s;
-    text-decoration: none !important;
-}
-
-input[type="submit"] {
-    transition: .5s;
-    cursor: pointer;
-}
-
-a.btn-blue {
-    background: #3bafbe;
-    border-radius: 25px;
-    padding: 10px 20px;
+.logo {
     color: #fff;
+    font-family: 'Yesteryear', cursive;
+    font-size: 40px;
+}
+
+.logo span.span-logo {
+    font-weight: bold;
+    color: #f2ac32;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.nav-menu {
+    list-style: none;
+    color: #fff;
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 16px;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+    color: #fff;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: color .4s ease-in-out;
 }
 
-a.btn-blue:hover {
-    background: #333;
-    color: #fff;
+.nav-menu li a:hover {
+    color: #f2ac32;
 }
 
-input {
-    background: #333333;
-    color: #fff;
-    border: 1px border;
-    padding: 7px;
-    border-radius: 5px;
-    border: none;
-}
-
-input:focus {
-    border: none;
-}
-
-
-/* ====================================================== */
-
-#area-header {
-    border-top: 5px solid #3bafbe;
-    border-bottom: 1px solid #e2e2e2;
-    padding: 20px 0;
-}
-
-#area-header .area-social {
-    clear: both;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#area-header .area-social ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#area-header .area-social ul li {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-#area-header .area-social ul li a {
-    color: #fff;
-    background-color: #1f1f1f;
-    display: block;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 5px;
-}
-
-#area-header .area-social ul li a:hover {
-    background: #ee802f;
-}
-
-
-/* ====================================================== */
-
-.area-search {
-    text-align: right;
-    width: 100%;
-    clear: both;
-    margin-bottom: 20px;
-}
-
-.area-search input[type="submit"] {
-    background: #3bafbe;
-}
-
-.area-search input[type="submit"]:hover {
-    background: #ee802f;
-}
-
-#main-nav {
-    clear: both;
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: right;
-}
-
-#main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#main-nav ul li {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-#main-nav ul li a {
-    display: block;
-    font-size: 14px;
-    padding: 5px 15px;
-    color: #999999;
-    text-transform: uppercase;
-}
-
-#main-nav ul li a:hover {
-    color: #3bafbe;
-}
-
-
-/* ==================================================================== */
-
-#banner-area {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 20px;
-}
-
-#banner-area .item img {
-    width: 100%;
-    height: auto;
-}
-
-.banner-content {
+.header-content {
     display: table;
     width: 100%;
-    height: 100%;
+    height: 40%;
+    text-align: center;
+    color: #fff;
 }
 
-.banner-content .text-banner {
+.header-content .content {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    height: 100%;
-    color: #999999;
+    height: 40%;
 }
 
-.banner-content .text-banner h3 {
-    color: #333;
+.header-content .content .header-title-1 {
+    color: #f2ac32;
+    font-size: 44px;
+    font-family: 'Rochester', cursive;
 }
 
-
-/*========================== Box Slider =================================*/
-
-.bx-wrapper {
-    padding: 20px 10px;
-}
-
-.bx-wrapper .bx-controls-direction a {
-    display: none;
-}
-
-.bx-wrapper .bx-pager {
-    text-align: right;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-    background: transparent;
-    border: 1px solid #3bafbe;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: #3bafbe;
-}
-
-
-/*========================================================================*/
-
-.intro {
-    padding: 20px 0 60px;
-}
-
-.intro .intro-content {
-    padding: 10px;
-    color: #999999;
-}
-
-.intro .intro-content h5 {
-    font-size: 14px;
-    color: #4a4a4a;
-    padding: 10px 0;
-}
-
-
-/*===================================================*/
-
-#services_area {
-    border-top: 2px solid #e2e2e2;
-    padding: 40px 0;
-    color: #999999;
-}
-
-#services_area h2 {
-    color: #7f7f7f;
-    font-size: 25px;
-    font-weight: 100;
-    text-align: center;
-    font-style: italic;
-    line-height: 40px;
-}
-
-#services_area .service {
-    margin-top: 40px;
-}
-
-.service .service-item {
-    padding-left: 50px;
-}
-
-.service .service-item h5 {
-    font-weight: 200;
-    font-size: 15px;
-    color: #3bafbe;
-}
-
-.service .service-item p {
-    text-align: justify;
-}
-
-
-/*===========================================================*/
-
-#contact {
-    background: #252525;
-    color: #fff;
-    padding: 40px 20px;
-}
-
-#contact .content-contact p,
-#contact .content-contact p a {
-    margin-top: 20px;
-    color: #999999;
-}
-
-#contact .content-contact.adress p {
-    line-height: 7px;
-}
-
-#contact .content-contact.blog p {
-    border-bottom: 1px solid #e2e2e2 !important;
-    line-height: 30px;
-}
-
-#contact .content-contact.blog p a {
-    color: #3bafbe;
-}
-
-#contact .content-contact.blog p a:hover {
-    color: #ee802f;
-}
-
-#contact .content-contact.text a {
-    float: right;
-    margin-top: -25px;
-    text-transform: capitalize;
-    color: #3bafbe;
-}
-
-#contact .content-contact.text a:hover {
-    color: #ee802f;
-}
-
-#contact .content-contact.form {
-    margin-top: 26px;
-}
-
-#contact .content-contact.form input {
-    margin-bottom: 15px;
-}
-
-#contact .content-contact.form input[type="email"] {
-    margin-bottom: 20px;
-}
-
-#contact .content-contact.form .btn-blue {
-    border-radius: 4px;
-    padding: 10px 20px;
-}
-
-
-/*======================================================*/
-
-#footer {
-    background: #1a1a1a;
-    color: #999999;
-    padding: 20px 0 10px;
+.header-content .content .header-title-2 {
+    text-transform: uppercase;
 }
