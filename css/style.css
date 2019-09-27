@@ -199,86 +199,121 @@ nav {
 
 /**===================== Service Section =======================================**/
 
-.services-seection {
-    height: 600px;
+.spetialities-section {
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../images/services.jpg");
     background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.services {
+.spetialities-middle {
+    text-align: center;
+    position: relative;
+}
+
+.spetiali-h1 {
+    color: #f2ac32;
+    font-size: 50px;
+    font-family: 'Rochester', cursive;
+    margin-bottom: 15px;
+}
+
+.spetiali-h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.spetialities-img3,
+.spetialities-img2,
+.spetialities-img1 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.spetialities-row {
     display: flex;
     justify-content: center;
 }
 
-.services .service {
-    width: 300px;
-    height: 200px;
-    margin-right: 15px;
-    margin-left: 15px;
+.spetialities-col {
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.services .service.service-1 {
-    background-image: url("../images/breakfast.jpg");
+.spetialities-img1 {
+    background-image: url("../images/brakfast-egs.jpg");
     background-size: cover;
-    position: relative;
-    text-align: center;
 }
 
-.services .service.service-2 {
+.spetialities-img2 {
     background-image: url("../images/lunch.jpg");
     background-size: cover;
-    position: relative;
-    text-align: center;
 }
 
-.services .service.service-3 {
+.spetialities-img3 {
     background-image: url("../images/dinner.jpg");
     background-size: cover;
-    position: relative;
-    text-align: center;
 }
 
-.services .service .title-service {
+.spetialities-h3 {
+    font-size: 26px;
     color: #fff;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
-    text-transform: capitalize;
-    position: absolute;
-    bottom: -40px;
-    left: 120px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
 }
 
-.services .service .services-overlay {
-    height: 100%;
+.spetialities-overlay {
+    background: rgb(241, 171, 50, 0.7);
     width: 100%;
-    background: rgba(242, 171, 49, 0.7);
-    position: relative;
-    transition: all .4s linear;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
     opacity: 0;
+    transition: all .4s ease-in-out;
 }
 
-.services .service .services-overlay .text-overlay {
+.spetialities-overlay-border {
+    width: 100%;
+    height: 100%;
     border: 2px solid #fff;
-    height: 170px;
-    width: 261px;
-    position: absolute;
-    top: 17px;
-    left: 17px;
-}
-
-.services .service .services-overlay .title-ovelay a {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
-    text-transform: capitalize;
-    position: absolute;
-    left: 60px;
-    top: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
-.services .service .services-overlay:hover {
+.spetialities-img1:hover .spetialities-overlay,
+.spetialities-img2:hover .spetialities-overlay,
+.spetialities-img3:hover .spetialities-overlay {
     opacity: 1;
+}
+
+.spetialities-middle::before {
+    content: "";
+    position: absolute;
+    border-top: 100px solid #f0f0f0f0;
+    border-right: 100vw solid transparent;
+    top: -100px;
+    left: 0;
+}
+
+.spetialities-middle::after {
+    content: "";
+    position: absolute;
+    border-bottom: 100px solid #f0f0f0f0;
+    border-left: 100vw solid transparent;
+    bottom: -100px;
+    right: 0;
 }
