@@ -41,12 +41,13 @@ nav {
     font-family: 'Oswald', sans-serif;
 }
 
-.nav-menu li a i.fa.fa-shopping-bag {
+.nav-menu li a i.fas.fa-shopping-bag {
     font-size: 20px !important;
     position: relative;
 }
 
-.nav-menu li a i.fa.fa-shopping-bag::after {
+
+/* .nav-menu li a i.fas.fa-shopping-bag::before {
     content: "";
     position: absolute;
     top: -4px;
@@ -58,9 +59,11 @@ nav {
     transition: all .4s ease-in-out;
 }
 
-.nav-menu li a i.fa.fa-shopping-bag:hover::after {
+.nav-menu li a i.fas.fa-shopping-bag:hover::before {
     background: #fff;
 }
+
+*/
 
 .nav-menu li a {
     color: #fff;
@@ -122,7 +125,7 @@ nav {
 
 .discover-section {
     height: 500px;
-    background-color: rgba(62, 48, 48, 0.1);
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
 }
@@ -303,7 +306,7 @@ nav {
 .spetialities-middle::before {
     content: "";
     position: absolute;
-    border-top: 100px solid #f0f0f0f0;
+    border-top: 100px solid #f0f0f0;
     border-right: 100vw solid transparent;
     top: -100px;
     left: 0;
@@ -312,8 +315,181 @@ nav {
 .spetialities-middle::after {
     content: "";
     position: absolute;
-    border-bottom: 100px solid #f0f0f0f0;
+    border-bottom: 100px solid #f0f0f0;
     border-left: 100vw solid transparent;
     bottom: -100px;
     right: 0;
+}
+
+
+/**===================== Spetial menu  Section =======================================**/
+
+.spetial-menu-section {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px;
+    color: #000;
+}
+
+.spetial-menu-h1 {
+    color: #f2ac32;
+    font-size: 40px;
+    font-family: 'Rochester', cursive;
+    margin-bottom: 15px;
+}
+
+.spetial-menu-h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.spetial-menu-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.spetial-menu-h3,
+.spetial-menu-small-h3 {
+    width: 100%;
+    text-transform: capitalize;
+    font-family: 'Rochester', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.spetial-menu-h4,
+.spetial-menu-small-h4 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.separator,
+.separator-orange {
+    width: 40px;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+.separator {
+    border-bottom: 2px solid #fff;
+}
+
+svg.svg-inline--fa.fa-ice-cream.fa-w-14,
+svg.svg-inline--fa.fa-pizza-slice.fa-w-16,
+svg.svg-inline--fa.fa-hamburger.fa-w-16,
+svg.svg-inline--fa.fa-utensils.fa-w-13 {
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+svg.svg-inline--fa.fa-hamburger.fa-w-16,
+svg.svg-inline--fa.fa-utensils.fa-w-13 {
+    color: #f2ac32;
+}
+
+.spetial-menu-p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.spetial-menu-col {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-large {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.col-large-1,
+.col-large-3 {
+    background: #f2ac32;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+}
+
+.col-large-1::after,
+.col-large-3::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    /* width: 10px; */
+    /* height: 0; */
+    border-top: 15px solid transparent;
+    border-left: 20px solid #f2ac32;
+    border-bottom: 15px solid transparent;
+}
+
+.col-large-2 {
+    background: url("../images/ice-cream.jpg");
+    background-size: cover;
+}
+
+.col-large-2 {
+    background: url("../images/ice-cream.jpg");
+    background-size: cover;
+}
+
+.col-large-4 {
+    background: url("../images/pizza.jpg");
+    background-size: cover;
+}
+
+.col-small {
+    width: 50%;
+    height: 225px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.col-small-1,
+.col-small-3 {
+    background: #fff;
+}
+
+.col-small-2 {
+    background: url("../images/pasta2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.col-small-4 {
+    background: url("../images/sandwich.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.spetial-menu-small-h3 {
+    color: #f2ac32;
+}
+
+.spetial-menu-small-h4 {
+    color: #000;
+}
+
+.separator-orange {
+    border-bottom: 2px solid #f2ac32;
 }
