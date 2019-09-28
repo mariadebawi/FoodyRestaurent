@@ -441,19 +441,58 @@ svg.svg-inline--fa.fa-utensils.fa-w-13 {
     border-bottom: 15px solid transparent;
 }
 
-.col-large-2 {
-    background: url("../images/ice-cream.jpg");
-    background-size: cover;
+.col-small-1-right::after,
+.col-small-3-right::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    /* width: 10px; */
+    /* height: 0; */
+    border-top: 15px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 15px solid transparent;
+}
+
+.col-small-3-right-1::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 15px solid transparent;
+}
+
+.col-small-2-right::after,
+.col-small-4-right::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    /* width: 10px; */
+    /* height: 0; */
+    border-top: 15px solid transparent;
+    border-left: 20px solid #f2ac32;
+    border-bottom: 15px solid transparent;
 }
 
 .col-large-2 {
     background: url("../images/ice-cream.jpg");
     background-size: cover;
+    background-position: center;
+}
+
+.col-large-2 {
+    background: url("../images/ice-cream.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .col-large-4 {
     background: url("../images/pizza.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .col-small {
@@ -466,17 +505,23 @@ svg.svg-inline--fa.fa-utensils.fa-w-13 {
 }
 
 .col-small-1,
-.col-small-3 {
+.col-small-3,
+.col-small-1-right,
+.col-small-3-right,
+.col-small-3-right-1 {
     background: #fff;
+    position: relative;
 }
 
-.col-small-2 {
+.col-small-2,
+.col-small-2-right {
     background: url("../images/pasta2.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.col-small-4 {
+.col-small-4,
+.col-small-4-right {
     background: url("../images/sandwich.jpg");
     background-size: cover;
     background-position: center;
